@@ -17,8 +17,9 @@ describe('Cadastro de dispositivos', ()=> {
             expect(response.status).equal(400)
             expect(response.body.error)
                 .equal('400 Bad Request. If you are trying to create or update the data, potential issue is that you are sending incorrect body json or it is missing at all.')
-                cy.log('Starting API POST 400', response.status);
+
 
         })
+    cy.log('Starting API POST 400', response.status);
     })
 })
