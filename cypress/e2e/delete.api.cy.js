@@ -4,6 +4,7 @@ describe('Deletar dispositivos', ()=> {
 
     it('Deletar um dispositivo', () => {
 
+        
         const body = {
             "name": "Pc do Kaio",
             "data": {
