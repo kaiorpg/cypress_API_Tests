@@ -5,11 +5,16 @@
   "scripts": {
     "test": "cypress run"
   },
+  "screenshotsFolder": "cypress/screenshots",
+  "video": true,
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "cypress": "^13.12.0"
+  
   }
+  
 }
+
