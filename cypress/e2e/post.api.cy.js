@@ -1,11 +1,11 @@
 /// <reference types="cypress"/>
 
 describe('Cadastro de dispositivos', ()=> {
-    cy.log('Starting API POST');
+
     const payload_cadastro_device = require('../fixtures/cadastrar_device_sucesso.json')
 
     it('Cadastrar Dispositivos', () => {
-
+        cy.log('Starting API POST');
         const dataAtual = new Date().toISOString().slice(0, 16)
      
 

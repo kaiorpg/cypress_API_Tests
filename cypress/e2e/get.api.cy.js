@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Buscar dispositivos', ()=> {
-    cy.log('Starting API GET');
+
     it('Buscar um dispositivo específico', () => {
 
         const device_id = '7'
@@ -32,5 +32,6 @@ describe('Buscar dispositivos', ()=> {
                 expect(response.status).equal(404)
                 expect(response.body.error).equal(`Oject with id=${device_id} was not found.`)
             })
+            cy.log('Starting API response', response.status);
     }); 
 })

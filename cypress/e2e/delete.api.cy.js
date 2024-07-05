@@ -24,7 +24,7 @@ describe('Deletar dispositivos', ()=> {
                 expect(response_del.status).equal(200)
                 expect(response_del.body.message).equal(`Object with id = ${response_post.body.id} has been deleted.`)
             })
-            cy.log('Delete finalizado');
+            cy.log('Delete finalizado', response_del.status);
         })
 
     })
