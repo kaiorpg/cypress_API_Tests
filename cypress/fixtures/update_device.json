@@ -1,0 +1,10 @@
+{
+    "name": "Pc do Perdigão",
+    "data": {
+        "year": 2024,
+        "price": 2999.99,
+        "CPU model": "Intel Core i9",
+        "Hard disk size": "3 TB",
+        "owner": "Kaio Perdigão QA"
+    }
+}  
