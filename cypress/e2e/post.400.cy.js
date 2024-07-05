@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Cadastro de dispositivos', ()=> {
-
+    cy.log('Starting API POST 400');
     it('Cadastrar um dispositivo sem mandar dados', () => {
 
         cy.request({

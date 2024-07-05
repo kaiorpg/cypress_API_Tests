@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Alterar dispositivos', ()=> {
-
+    cy.log('Starting API PUT');
     const body_cadastro = require('../fixtures/cadastrar_device_sucesso.json')
     const body_update = require('../fixtures/update_device.json')
     it('Alterar um dispositivo', () => {

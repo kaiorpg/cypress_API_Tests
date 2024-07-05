@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Deletar dispositivos especiais', ()=> {
-
+    cy.log('Starting API Tests');
     it('Deletar um dispositivo não existente ou reservado', () => {
 
     const id_inexistente = 'Kaio'
@@ -28,6 +28,7 @@ describe('Deletar dispositivos especiais', ()=> {
         cy.get('@deleteReservedDevice').then((response_del_reserved) =>{
             expect(response_del_reserved.status).equal(405)
             expect(response_del_reserved.body.error).equal(`${id_reservado} is a reserved id and the data object of it cannot be deleted. You can create your own new object via POST request and try to send a DELETE request with new generated object id.`)
+        cy.log('Delete error: 404');
         })
     })
 })

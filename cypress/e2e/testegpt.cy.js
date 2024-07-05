@@ -1,6 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('GET Dispositivo', () => {
+    cy.log('Starting API Test GPT');
     it('Deve obter os detalhes do dispositivo com ID 12', () => {
 
         // Enviar uma requisição GET para a URL especificada

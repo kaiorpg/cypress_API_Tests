@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 
 describe('Buscar dispositivos', ()=> {
-
+    cy.log('Starting API GET');
     it('Buscar um dispositivo específico', () => {
 
         const device_id = '7'
