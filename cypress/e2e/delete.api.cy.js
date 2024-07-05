@@ -3,7 +3,7 @@
 describe('Deletar dispositivos', ()=> {
 
     it('Deletar um dispositivo', () => {
-        cy.log('Delete finalizado', response_del.status);
+        cy.log('Delete finalizado', response);
         
         const body = {
             "name": "Pc do Kaio",

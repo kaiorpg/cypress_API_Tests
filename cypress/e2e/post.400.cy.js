@@ -20,6 +20,6 @@ describe('Cadastro de dispositivos', ()=> {
 
 
         })
-    cy.log('Starting API POST 400', response.status);
+    cy.log('Starting API POST 400', response);
     })
 })
